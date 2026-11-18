@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Григорян Антон Вартанович | Адвокат</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./img/logo/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="./index.html"
+          ><img src="./img/logo/logo.png" alt="" width="45"
+        /></a>
+      </div>
+      <div class="header__contacts">
+        <a class="contact-btn" href="tel:+79184841900" aria-label="Позвонить">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"
+            />
+          </svg>
+        </a>
+        <a
+          class="contact-btn"
+          href="https://wa.me/79184841900"
+          target="_blank"
+          rel="noopener"
+          aria-label="Написать в WhatsApp"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="header__nav-wrap">
+        <nav class="header__nav">
+          <a href="#home">Главная</a>
+          <a href="#about">Обо мне</a>
+          <div class="header__nav-item header__nav-item--dropdown">
+            <a href="#services">Услуги</a>
+            <div class="header__dropdown">
+              <a href="#services">Все услуги</a>
+              <a href="./administrative.html">Административные дела</a>
+              <a href="./criminal.html">Уголовные дела</a>
+              <a href="./civil.html">Гражданские споры</a>
+              <a href="./arbitration.html">Арбитражные дела</a>
+            </div>
+          </div>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+      <button
+        class="header__burger"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__nav">
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <div class="mobile-menu__dropdown">
+          <button
+            class="mobile-menu__dropdown-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileServicesMenu"
+          >
+            Услуги
+            <svg
+              class="mobile-menu__chevron"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="mobile-menu__submenu" id="mobileServicesMenu" style="border: none;">
+            <a href="#services">Все услуги</a>
+            <a href="./administrative.html">Административные дела</a>
+            <a href="./criminal.html">Уголовные дела</a>
+            <a href="./civil.html">Гражданские споры</a>
+            <a href="./arbitration.html">Арбитражные дела</a>
+          </div>
+        </div>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+
+    <div class="home" id="home">
+      <h1>Григорян Антон Вартанович</h1>
+      <p>
+        Ценю ваше время и нервы. Готов помочь в любое время суток! Опыт работы
+        более 18 лет.
+      </p>
+      <a
+        class="hero-btn"
+        href="https://wa.me/79184841900"
+        target="_blank"
+        rel="noopener"
+        aria-label="Написать в WhatsApp"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+          />
+        </svg>
+        <span>Написать в WhatsApp</span>
+      </a>
+    </div>
+    <section class="section about" id="about">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2>Адвокат, которому доверяют сложные дела</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__media">
+            <div class="about__photo">
+              <img src="./img/anton.png" alt="Григорян Антон Вартанович" />
+            </div>
+            <div class="about__badge">
+              <strong>18+</strong>
+              <span>лет адвокатской практики</span>
+            </div>
+          </div>
+
+          <div class="about__body">
+            <p class="about__lead">
+              Меня зовут Антон Вартанович Григорян. Более 18 лет защищаю
+              интересы клиентов и довожу дела до результата - от первой
+              консультации до судебного решения.
+            </p>
+            <p>
+              Специализируюсь на уголовных и административных делах, представляю
+              интересы в гражданских и арбитражных спорах. Берусь за сложные
+              ситуации, где важны опыт, скорость реакции и внимание к деталям.
+            </p>
+            <p>
+              Работаю по Краснодарскому краю, консультирую онлайн и офлайн
+              бесплатно. Ценю ваше время и нервы, поэтому остаюсь на связи в
+              любое время суток.
+            </p>
+            <p>
+              В данный момент я действующий адвокат в коллегии "Правовая защита"
+            </p>
+
+            <div class="about__stats">
+              <div class="about__stat">
+                <strong>18+</strong>
+                <span>лет практики</span>
+              </div>
+              <div class="about__stat">
+                <strong>4</strong>
+                <span>направления работы</span>
+              </div>
+              <div class="about__stat">
+                <strong>24/7</strong>
+                <span>на связи</span>
+              </div>
+            </div>
+            <a href="./about.html" class="about__a">Подробнее про адвоката Антона Вартанововича Григоряна</a>
+          </div>
+        </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2>Направления работы</h2>
+          <p class="section__lead">
+            Специализация по ключевым направлениям — от первой консультации до
+            вынесения решения.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <a class="service-card" href="./administrative.html">
+            <div class="service-card__image">
+              <img src="./img/oU8PAJWUNwTygVtkdQ8rNlaTrICClI8E9EaOX~tplv-vod-cs_651_868.webp" alt="Административные дела" />
+            </div>
+            <div class="service-card__overlay">
+              <span class="service-card__hint">Подробнее <svg
+                viewBox="0 0 24 24"
+                width="13"
+                height="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></span>
+              <h3>Административные дела</h3>
+              <p>
+                Защита по делам об административных правонарушениях. Обжалование
+                постановлений, представление интересов в суде.
+              </p>
+            </div>
+          </a>
+
+          <a class="service-card" href="./criminal.html">
+            <div class="service-card__image">
+              <img src="./img/qtq80-kjy6tA-portrait-a57e19b1b601dcea8e525ab6c3598611-607718f49df4e.jpeg" alt="Уголовные дела" />
+            </div>
+            <div class="service-card__overlay">
+              <span class="service-card__hint">Подробнее <svg
+                viewBox="0 0 24 24"
+                width="13"
+                height="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></span>
+              <h3>Уголовные дела</h3>
+              <p>
+                Защита на всех стадиях уголовного процесса — от доследственной
+                проверки до кассации и надзора.
+              </p>
+            </div>
+          </a>
+
+          <a class="service-card" href="./civil.html">
+            <div class="service-card__image">
+              <img src="./img/images.jpg" alt="Гражданские споры" />
+            </div>
+            <div class="service-card__overlay">
+              <span class="service-card__hint">Подробнее <svg
+                viewBox="0 0 24 24"
+                width="13"
+                height="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></span>
+              <h3>Гражданские споры</h3>
+              <p>
+                Имущественные, жилищные, семейные споры. Защита прав
+                потребителей, взыскание задолженности.
+              </p>
+            </div>
+          </a>
+
+          <a class="service-card" href="./arbitration.html">
+            <div class="service-card__image">
+              <img src="./img/image.jpg" alt="Арбитражные дела" />
+            </div>
+            <div class="service-card__overlay">
+              <span class="service-card__hint">Подробнее <svg
+                viewBox="0 0 24 24"
+                width="13"
+                height="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></span>
+              <h3>Арбитражные дела</h3>
+              <p>
+                Представительство в арбитражных судах. Корпоративные споры,
+                банкротство, взыскание с юридических лиц.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="section__inner" data-reviews-carousel data-autoplay="5000">
+        <div class="section__head">
+          <h2>Отзывы клиентов</h2>
+          <p class="section__lead">
+            Истории доверителей, которым удалось защитить свои интересы
+          </p>
+          <div class="reviews__nav">
+            <button
+              class="reviews__arrow reviews__arrow--prev"
+              type="button"
+              aria-label="Предыдущий отзыв"
+            >
+              &#10094;
+            </button>
+            <button
+              class="reviews__arrow reviews__arrow--next"
+              type="button"
+              aria-label="Следующий отзыв"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <div class="reviews__carousel">
+          <div class="reviews__viewport">
+            <div class="reviews__track">
+              <article class="review">
+                <div class="review__author">
+                  <strong>Елена В.</strong>
+                  <span>Наследственный спор</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Обратилась по сложному наследственному спору. Антон Вартанович
+                  подробно разобрал документы, объяснил перспективы и сопровождал
+                  дело до конца. Вопрос решился в мою пользу.
+                </p>
+              </article>
+
+              <article class="review">
+                <div class="review__author">
+                  <strong>Сергей К.</strong>
+                  <span>Уголовное дело</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Помог на стадии доследственной проверки. Чувствовалась реальная
+                  поддержка и профессионализм, каждое действие объясняли простым
+                  языком. Дело было прекращено.
+                </p>
+              </article>
+
+              <article class="review">
+                <div class="review__author">
+                  <strong>Марина Т.</strong>
+                  <span>Административное дело</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  После ДТП не знала, с чего начать. Мне помогли обжаловать
+                  постановление и добиться справедливого решения. Отдельное
+                  спасибо за терпение и внимание к деталям.
+                </p>
+              </article>
+
+              <article class="review">
+                 <div class="review__author">
+                  <strong>Андрей П.</strong>
+                  <span>Трудовой спор</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Защищал мои интересы в трудовом споре с работодателем. Всё
+                  прошло спокойно и профессионально, условия договора были
+                  понятными. Результатом полностью доволен.
+                </p>
+              </article>
+
+              <article class="review">
+                <div class="review__author">
+                  <strong>Ирина и Дмитрий</strong>
+                  <span>Недвижимость</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Сопровождал сделку с недвижимостью и помог избежать серьёзных
+                  рисков. Отличный специалист, к которому хочется возвращаться
+                  снова.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="reviews__dots">
+            <button
+              class="reviews__dot is-active"
+              type="button"
+              aria-label="Отзыв 1"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 2"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 3"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 4"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 5"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2>На связи в любое время суток</h2>
+          <p class="section__lead">
+            Опишите ситуацию удобным способом - отвечу лично и подскажу, как
+            действовать. Консультация бесплатна.
+          </p>
+        </div>
+
+        <div class="contacts__grid">
+          <a class="contact-card" href="tel:+79184841900">
+            <span class="contact-card__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"
+                />
+              </svg>
+            </span>
+            <span class="contact-card__arrow" aria-hidden="true">↗</span>
+            <span class="contact-card__label">Телефон</span>
+            <span class="contact-card__value">+7 (918) 484-19-00</span>
+            <span class="contact-card__hint">Нажмите, чтобы позвонить</span>
+          </a>
+
+          <a
+            class="contact-card contact-card--dark"
+            href="https://wa.me/79184841900"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact-card__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+            </span>
+            <span class="contact-card__arrow" aria-hidden="true">↗</span>
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value">Написать сообщение</span>
+            <span class="contact-card__hint">Отвечаю в любое время суток</span>
+          </a>
+
+          <div class="contact-card">
+            <span class="contact-card__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 2" />
+              </svg>
+            </span>
+            <span class="contact-card__label">График</span>
+            <span class="contact-card__value">Круглосуточно</span>
+            <span class="contact-card__hint">Без выходных и праздников</span>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-card__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11z" />
+                <circle cx="12" cy="10" r="2.6" />
+              </svg>
+            </span>
+            <span class="contact-card__label">Формат работы</span>
+            <span class="contact-card__value">Онлайн и офлайн</span>
+            <span class="contact-card__hint"
+              >Новороссийск, Рубина ул. 11, офис 113</span
+            >
+          </div>
+        </div>
+
+        <div class="contacts__cta">
+          <div>
+            <h3>Расскажите о своей ситуации</h3>
+            <p>
+              Чем раньше адвокат включится в дело, тем больше возможностей его
+              выиграть.
+            </p>
+          </div>
+          <a
+            class="hero-btn"
+            href="https://wa.me/79184841900"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              aria-hidden="true"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+            <span>Написать в WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section" id="map">
+      <div class="section__inner">
+        <div class="section__head">
+          <h2>Как меня найти</h2>
+          <p class="section__lead">
+            Новороссийск, ул. Рубина, 11, офис 113 — работаем по предварительной записи.
+          </p>
+        </div>
+        <div class="map">
+          <iframe
+            class="map__frame"
+            src="https://yandex.ru/map-widget/v1/?ll=37.772415%2C44.719044&z=17&pt=37.772415%2C44.719044%2Cpm2rdm"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen
+            loading="lazy"
+            title="Григорян Антон Вартанович — Новороссийск, ул. Рубина, 11"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© 2026 Григорян Антон Вартанович</span>
+        <div>
+          <a href="tel:+79184841900">+7 (918) 484-19-00</a
+          ><a href="https://wa.me/79184841900" style="margin-left: 35px"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              aria-hidden="true"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+            WhatsApp</a
+          >
+        </div>
+      </div>
+    </footer>
+    <a class="to-top" href="#home" aria-label="Наверх" title="Наверх">
+      <svg
+        viewBox="0 0 24 24"
+        width="22"
+        height="22"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </a>
+    <script src="./script.js"></script>
+  </body>
+</html>

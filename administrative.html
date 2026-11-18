@@ -1,0 +1,507 @@
+<!doctype html>
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Административные дела | Адвокат Антон Григорян</title>
+    <meta
+      name="description"
+      content="Адвокат по административным делам в Новороссийске: защита при составлении протоколов, обжалование постановлений, лишение прав, споры с государственными и надзорными органами."
+    />
+    <link rel="icon" type="image/png" href="./img/logo/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="service-page">
+    <header class="header">
+      <div class="header__logo">
+        <a href="./index.html" aria-label="На главную">
+          <img src="./img/logo/logo.png" alt="" width="45" />
+        </a>
+      </div>
+      <div class="header__contacts">
+        <a class="contact-btn" href="tel:+79184841900" aria-label="Позвонить">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z" />
+          </svg>
+        </a>
+        <a class="contact-btn" href="https://wa.me/79184841900" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+          </svg>
+        </a>
+      </div>
+      <div class="header__nav-wrap">
+        <nav class="header__nav" aria-label="Основная навигация">
+          <a href="./index.html">Главная</a>
+          <a href="./about.html">Обо мне</a>
+          <div class="header__nav-item header__nav-item--dropdown ">
+            <a>Услуги</a>
+            <div class="header__dropdown">
+              <a href="./index.html#services">Все услуги</a>
+              <a href="./administrative.html">Административные дела</a>
+              <a href="./criminal.html">Уголовные дела</a>
+              <a href="./civil.html">Гражданские споры</a>
+              <a href="./arbitration.html">Арбитражные дела</a>
+            </div>
+          </div>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+        <a href="./index.html">Главная</a>
+        <a href="./about.html">Обо мне</a>
+        <div class="mobile-menu__dropdown">
+          <button class="mobile-menu__dropdown-toggle" type="button" aria-expanded="false" aria-controls="mobileServicesMenu">
+            Услуги
+            <svg class="mobile-menu__chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="mobile-menu__submenu" id="mobileServicesMenu" style="border: none">
+            <a href="./index.html#services">Все услуги</a>
+            <a href="./administrative.html">Административные дела</a>
+            <a href="./criminal.html">Уголовные дела</a>
+            <a href="./civil.html">Гражданские споры</a>
+            <a href="./arbitration.html">Арбитражные дела</a>
+          </div>
+        </div>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="service-hero">
+        <div class="service-hero__media" aria-hidden="true"></div>
+        </div>
+        <div class="service-hero__inner">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a href="./index.html">Главная</a>
+            <span class="breadcrumbs__sep">/</span>
+            <a href="./index.html#services">Услуги</a>
+            <span class="breadcrumbs__sep">/</span>
+            <span aria-current="page" style="text-decoration: underline;">Административные дела</span>
+          </nav>
+          <h1>Защита по административным делам</h1>
+        </div>
+      </section>
+
+      <section class="section service-intro">
+        <div class="section__inner">
+          <div class="service-intro__grid">
+            <div class="service-intro__text">
+              <h2>Когда административное дело угрожает деньгам, правам и бизнесу</h2>
+              <p class="service-lead">
+                Административное правонарушение может показаться незначительным —
+                пока не вступит в силу постановление о штрафе, лишении
+                специального права или приостановлении деятельности. Последствия
+                касаются не только бюджета: для водителя это риск остаться без
+                прав, для предпринимателя — проверки, предписания и репутационные
+                потери.
+              </p>
+              <p class="service-lead">
+                Многие постановления можно оспорить — но только если вовремя
+                заметить процедурные нарушения и правильно выстроить позицию. Я
+                проверяю, как составлен протокол, соблюдены ли сроки и права
+                участника, подтверждено ли событие доказательствами, и предлагаю
+                план действий с учётом ближайших процессуальных сроков.
+              </p>
+              <p class="service-lead">
+                Опыт работы в следственных органах помогает мне смотреть на дело
+                глазами второй стороны — и заранее видеть слабые места
+                обвинения.
+              </p>
+            </div>
+            <aside class="info-card">
+              <h3>Когда стоит обратиться</h3>
+              <ul>
+                <li>составлен протокол об административном правонарушении;</li>
+                <li>получено постановление о штрафе, лишении прав или иной санкции;</li>
+                <li>проводятся проверка, осмотр или изъятие документов у бизнеса;</li>
+                <li>получено предписание или уведомление надзорного органа;</li>
+                <li>предстоит рассмотрение дела в суде или в органе;</li>
+                <li>пропущен срок обжалования, и нужно его восстановить.</li>
+              </ul>
+              <div class="info-card__note">
+                Первичная консультация бесплатна: разберём документы и определим,
+                есть ли основания для защиты.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section service-scope">
+        <div class="section__inner">
+          <div class="section__head">
+            <h2>С чем я помогаю</h2>
+            <p class="section__lead">
+              Сопровождаю дело на любой стадии — от проверки документов до
+              исполнения итогового постановления.
+            </p>
+          </div>
+          <div class="scope-grid">
+            <article class="scope-card">
+              <h3>Протоколы и проверки</h3>
+              <p>
+                Сопровождаю при составлении протокола и участии в проверках
+                полиции, ГИБДД, Роспотребнадзора, трудовой инспекции и других
+                органов. Помогаю зафиксировать замечания, получить копии
+                документов и не подписать то, что может быть использовано против
+                вас.
+              </p>
+            </article>
+            <article class="scope-card">
+              <h3>Обжалование постановлений</h3>
+              <p>
+                Готовлю жалобы в вышестоящий орган или суд, проверяю законность
+                постановления и процедуру привлечения. При необходимости
+                восстанавливаю пропущенный срок и заявляю ходатайство о
+                приостановлении исполнения наказания на время рассмотрения
+                жалобы.
+              </p>
+            </article>
+            <article class="scope-card">
+              <h3>Лишение специального права</h3>
+              <p>
+                Защищаю водителей по делам о лишении прав: проверяю основания
+                остановки, порядок освидетельствования, оформление материалов и
+                квалификацию события. Ошибки сотрудников часто становятся
+                решающим доводом защиты.
+              </p>
+            </article>
+            <article class="scope-card">
+              <h3>Штрафы и предписания бизнеса</h3>
+              <p>
+                Помогаю компаниям и ИП оспаривать штрафы, предписания и иные
+                меры, принятые по результатам проверок. Оцениваю полномочия
+                органа, соблюдение процедуры и соразмерность санкции.
+              </p>
+            </article>
+            <article class="scope-card">
+              <h3>Споры с госорганами</h3>
+              <p>
+                Представляю интересы в спорах с государственными, муниципальными
+                и надзорными органами, включая обжалование действий, бездействия
+                и решений должностных лиц.
+              </p>
+            </article>
+            <article class="scope-card">
+              <h3>Суд и исполнение</h3>
+              <p>
+                Участвую в рассмотрении дела в суде, готовлю возражения и
+                ходатайства, а после вступления постановления в силу помогаю с
+                вопросами отсрочки, рассрочки и порядка исполнения наказания.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section service-process">
+        <div class="section__inner">
+          <div class="section__head">
+            <h2>Как строится работа</h2>
+            <p class="section__lead">
+              Понятный порядок действий без лишних обещаний: сначала разбираемся
+              в обстоятельствах, затем принимаем решения.
+            </p>
+          </div>
+          <ol class="process-steps">
+            <li class="process-step">
+              <span class="process-step__num">01</span>
+              <h3>Первичная консультация</h3>
+              <p>
+                Обсуждаем событие, ваши права и ближайшие сроки. Вы показываете
+                протокол, постановление и другие документы, если они уже есть.
+              </p>
+            </li>
+            <li class="process-step">
+              <span class="process-step__num">02</span>
+              <h3>Анализ материалов</h3>
+              <p>
+                Изучаю процедуру привлечения, доказательства и квалификацию.
+                Определяю, какие нарушения можно использовать для защиты.
+              </p>
+            </li>
+            <li class="process-step">
+              <span class="process-step__num">03</span>
+              <h3>Подготовка позиции</h3>
+              <p>
+                Составляю объяснения, ходатайства и жалобу, при необходимости
+                восстанавливаю срок обжалования.
+              </p>
+            </li>
+            <li class="process-step">
+              <span class="process-step__num">04</span>
+              <h3>Представительство</h3>
+              <p>
+                Участвую в рассмотрении дела и обжаловании, сопровождаю
+                исполнение принятого решения в согласованном объёме.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section service-included">
+        <div class="section__inner">
+          <div class="included-layout">
+            <div class="included-layout__head">
+              <h2>Что входит в работу</h2>
+              <p class="service-lead">
+                Объём помощи зависит от конкретной ситуации — после изучения
+                документов вы получите понятный план и прозрачную оценку
+                стоимости.
+              </p>
+              <a class="hero-btn" href="tel:+79184841900" target="_blank" rel="noopener noreferrer">
+                <span>Обсудить ситуацию</span>
+              </a>
+            </div>
+            <ul class="included-list">
+              <li>правовой анализ протокола и материалов дела;</li>
+              <li>проверка сроков давности и порядка привлечения к ответственности;</li>
+              <li>подготовка объяснений, замечаний и ходатайств;</li>
+              <li>жалоба на постановление в вышестоящий орган или суд;</li>
+              <li>восстановление срока обжалования;</li>
+              <li>участие в заседаниях и при рассмотрении дела органом;</li>
+              <li>защита бизнеса при проверках и предписаниях;</li>
+              <li>консультации по отсрочке и порядку исполнения постановления.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+    <section class="section reviews" id="reviews">
+      <div class="section__inner" data-reviews-carousel data-autoplay="5000">
+        <div class="section__head">
+          <h2>Отзывы клиентов</h2>
+          <p class="section__lead">
+            Истории доверителей, которым удалось защитить свои интересы
+          </p>
+          <div class="reviews__nav">
+            <button
+              class="reviews__arrow reviews__arrow--prev"
+              type="button"
+              aria-label="Предыдущий отзыв"
+            >
+              &#10094;
+            </button>
+            <button
+              class="reviews__arrow reviews__arrow--next"
+              type="button"
+              aria-label="Следующий отзыв"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <div class="reviews__carousel">
+          <div class="reviews__viewport">
+            <div class="reviews__track">
+              <article class="review">
+                <div class="review__author">
+                  <strong>Елена В.</strong>
+                  <span>Наследственный спор</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Обратилась по сложному наследственному спору. Антон Вартанович
+                  подробно разобрал документы, объяснил перспективы и сопровождал
+                  дело до конца. Вопрос решился в мою пользу.
+                </p>
+              </article>
+
+              <article class="review">
+                <div class="review__author">
+                  <strong>Сергей К.</strong>
+                  <span>Уголовное дело</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Помог на стадии доследственной проверки. Чувствовалась реальная
+                  поддержка и профессионализм, каждое действие объясняли простым
+                  языком. Дело было прекращено.
+                </p>
+              </article>
+
+              <article class="review">
+                <div class="review__author">
+                  <strong>Марина Т.</strong>
+                  <span>Административное дело</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  После ДТП не знала, с чего начать. Мне помогли обжаловать
+                  постановление и добиться справедливого решения. Отдельное
+                  спасибо за терпение и внимание к деталям.
+                </p>
+              </article>
+
+              <article class="review">
+                 <div class="review__author">
+                  <strong>Андрей П.</strong>
+                  <span>Трудовой спор</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Защищал мои интересы в трудовом споре с работодателем. Всё
+                  прошло спокойно и профессионально, условия договора были
+                  понятными. Результатом полностью доволен.
+                </p>
+              </article>
+
+              <article class="review">
+                <div class="review__author">
+                  <strong>Ирина и Дмитрий</strong>
+                  <span>Недвижимость</span>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="review__text">
+                  Сопровождал сделку с недвижимостью и помог избежать серьёзных
+                  рисков. Отличный специалист, к которому хочется возвращаться
+                  снова.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="reviews__dots">
+            <button
+              class="reviews__dot is-active"
+              type="button"
+              aria-label="Отзыв 1"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 2"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 3"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 4"
+            ></button>
+            <button
+              class="reviews__dot"
+              type="button"
+              aria-label="Отзыв 5"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="section service-contact" style="margin-top: 50px;">
+        <div class="section__inner">
+          <section class="about-contact" id="contacts">
+            <div class="about-contact__info">
+              <h2>Обсудить вашу ситуацию</h2>
+              <p class="about-contact__intro">
+                Первичная консультация бесплатна. Позвоните или напишите —
+                обсудим обстоятельства и возможные дальнейшие действия.
+              </p>
+              <div class="about-contact__items">
+                <div class="about-contact__item">
+                  <span>Телефон</span>
+                  <a href="tel:+79184841900">+7 (918) 484-19-00</a>
+                </div>
+                <div class="about-contact__item">
+                  <span>WhatsApp</span>
+                  <a href="https://wa.me/79184841900" target="_blank" rel="noopener noreferrer">+7 (918) 484-19-00</a>
+                </div>
+                <div class="about-contact__item">
+                  <span>График</span>
+                  <strong>С 10:00 до 18:00</strong>
+                </div>
+                <div class="about-contact__item">
+                  <span>Формат работы</span>
+                  <strong>Онлайн и лично в Новороссийске</strong>
+                </div>
+                <div class="about-contact__item">
+                  <span>Офис коллегии «Правовая защита»</span>
+                  <strong>Новороссийск, ул. Рубина, 11, офис 113</strong>
+                </div>
+              </div>
+            </div>
+            <div class="about-contact__map">
+              <div class="map">
+                <iframe
+                  class="map__frame"
+                  src="https://yandex.ru/map-widget/v1/?ll=37.772415%2C44.719044&z=17&pt=37.772415%2C44.719044%2Cpm2rdm"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen
+                  loading="lazy"
+                  title="Офис Антона Григоряна — Новороссийск, ул. Рубина, 11, офис 113"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© 2026 Григорян Антон Вартанович</span>
+        <div>
+          <a href="tel:+79184841900">+7 (918) 484-19-00</a>
+          <a href="https://wa.me/79184841900" style="margin-left: 35px"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              aria-hidden="true"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+            WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+    <a class="to-top" href="#" aria-label="Наверх" title="Наверх">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </a>
+    <script src="./script.js"></script>
+  </body>
+</html>
